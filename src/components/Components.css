@@ -8,23 +8,7 @@
   font-size: 14px;
 }
 
-.tx-header {
-  display: flex;
-}
 
-.tx-history {
-  width: 40%;
-  text-align: left;
-}
-
-.tx-prize,
-.tx-status {
-  width: 15%;
-}
-
-.tx-date {
-  width: 30%;
-}
 
 .content-address {
   font-family: 'Inter', sans-serif;

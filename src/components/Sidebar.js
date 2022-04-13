@@ -6,9 +6,9 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 
 export default function Sidebar() {
     return (
-        <Grid container xs={12} sx={{backgroundColor:"beige"}}>
+        <Grid className="sidebar" container xs={12} >
             <Grid item xs={12} >
-                <img className='logo' src="../../images/logo512.jpg" />
+                <img className='logo' src="../../images/logo512.png" />
             </Grid>
             <Grid item xs={12} >
                 Create

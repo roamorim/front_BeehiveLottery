@@ -2,14 +2,47 @@
   text-align: center;
 }
 
+.page-title,
+.raffle-card-title {
+  text-align: left;
+}
 
-.logo{
+.balance-card-value {
+  text-align: center;
+  color: #5956E9;
+}
+
+.logo {
   width: 90px;
 }
 
-.logo-meter{
+.tx-table-title {
+  text-align: right;
+
+}
+
+.sidebar {
+  background-color: #F4F5FA;
+  height: 100%;
+}
+
+.card {
+  height: 300px
+}
+
+.balance-card {
+  height: 300px;
+  background: linear-gradient(1.51deg, #EBF1FF 5.34%, #F2F5FE 72.41%);
+}
+
+.logo-meter {
   width: 67px;
 }
+
+.logo-meter-balance {
+  width: 21px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,13 +56,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

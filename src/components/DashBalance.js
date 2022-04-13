@@ -2,38 +2,55 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack'
+import Item from '@mui/material/Stack'
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button'
 
-var cardStyle = {
-    height: '300px',
-    backgroundColo: 'grey'
-}
 export default function DashBalance() {
     return (
-        <Card elevation={5} style={cardStyle} p>
+        <Card elevation={5} className="balance-card" sx={{ borderRadius: 7 }}>
             <CardContent >
                 <Grid container xs={12} >
-                    <Grid item xs={2} >
-                        <img className='logo-meter' src="../../images/logometer.png" />
+                    <Grid item xs={6} >
                     </Grid>
-                    <Grid item xs={10} >
-                        Prize 70,000 $MTR
+                    <Grid item xs={6} >
+                        <Stack direction={'row'} spacing={1}>
+                            <Item>
+                                <Typography variant="h7" className="raffle-card-title" sx={{ fontWeight: 700 }}>Currency</Typography>
+                            </Item>
+                            <Item>
+                                <img className='logo-meter-balance' src="../../images/logometer.png" />
+                            </Item>
+                            <Item>
+                                <Typography variant="h7" className="raffle-card-title" sx={{ fontWeight: 700 }}>MTR</Typography>
+                            </Item>
+                        </Stack>
                     </Grid>
                 </Grid>
-                <Grid container xs={12} >
+                <Grid container xs={12} paddingTop={9} >
                     <Grid item xs={12} >
-                        Raffle 1
-                        Brief Description
+                        <Typography variant="h3" className="balance-card-value" sx={{ fontWeight: 700 }}>250,000</Typography>
                     </Grid>
                 </Grid>
-                <Grid container xs={12} >
-                    <Grid item xs={4} >
-                        02:30
+                <Grid container xs={12} paddingTop={3} >
+                    <Grid item xs={12} >
+                        <Typography variant="h7" className="raffle-card-title" sx={{ fontWeight: 700 }}>Total<p /></Typography>
                     </Grid>
-                    <Grid style={{ borderLeft: "1px solid grey" }} item xs={4} >
-                        127
-                    </Grid>
-                    <Grid style={{ borderLeft: "1px solid grey" }} item xs={4} >
-                        01
+                </Grid>
+                <Grid container xs={12} paddingTop={3} >
+                    <Grid item xs={12} >
+                        <button style={{
+                            padding: '8px',
+                            paddingLeft: '30px',
+                            paddingRight: '30px',
+                            borderRadius: '15px',
+                            border: 'none',
+                            outline: 'inherit',
+                            cursor: 'pointer',
+                            background: '#5956e9',
+                            color: 'white'
+                        }}>Cancel</button>
                     </Grid>
                 </Grid>
             </CardContent>

@@ -24,16 +24,13 @@ const theme = createTheme({
 
 export default function Appbar() {
   return (
-    <Grid container item xs={12} height={2}>
+    <Grid container item xs={12} >
       <ThemeProvider theme={theme}>
-        <Grid container item xs={2} >
+        <Grid item xs={10} className='page-title'>
           <Typography variant="pageTitle" component="h4" >My Dashboard</Typography>
-
         </Grid>
-        <Grid container item xs={10} style={{ background: 'transparent', justifyContent: 'flex-end' }}>
+        <Grid item xs={2} >
           <button style={{
-            marginRight: '15%',
-            marginTop: '50px',
             padding: '8px',
             paddingLeft: '40px',
             paddingRight: '40px',

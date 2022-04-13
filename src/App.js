@@ -9,7 +9,7 @@ import DashBalance from './components/DashBalance'
 
 // Pages
 
-import TransactionList from './components/TransactionList';
+import TransactionCard from './components/TransactionCard';
 import Grid from "@mui/material/Grid"
 
 
@@ -19,18 +19,18 @@ function App() {
       <Grid container >
         <Grid item xs={1}> <Sidebar />
         </Grid>
-        <Grid container xs={11} spacing={3}>
+        <Grid padding={4} container xs={11} spacing={3}>
           <Grid item xs={12}> <Appbar />
           </Grid>
           <Grid item xs={4}> <NewRaffleCard />
           </Grid>
-          <Grid item xs={4}> <RaffleCard />
+          <Grid item xs={4}> <RaffleCard prize="70,000"/>
           </Grid>
-          <Grid item xs={4}> <RaffleCard />
+          <Grid item xs={4}> <RaffleCard prize="130,000"/>
           </Grid>
           <Grid item xs={4}> <DashBalance />
           </Grid>
-          <Grid item xs={8}> <TransactionList />
+          <Grid item xs={8}> <TransactionCard />
           </Grid>
         </Grid>
       </Grid>

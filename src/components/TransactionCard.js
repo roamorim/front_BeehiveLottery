@@ -13,7 +13,7 @@ export default function TransactionCard() {
     return (
         <Card elevation={5} className="card" sx={{ borderRadius: 7 }}>
             <CardContent >
-                <Grid container>
+                <Grid container >
                     <Grid item xs={5}>
                         <Typography variant="h7" className="tx-table-title" sx={{ fontWeight: 700 }}>Transaction History</Typography>
                     </Grid>
@@ -27,7 +27,7 @@ export default function TransactionCard() {
                         <Typography variant="h7" className="tx-table-title" sx={{ fontWeight: 700 }}>Weekly</Typography>
                     </Grid>
                 </Grid>
-
+                <TransactionRow statusPaid/>
                 <TransactionRow />
                 <TransactionRow />
             </CardContent>

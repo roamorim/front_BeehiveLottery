@@ -27,7 +27,7 @@ export default function Appbar() {
     <Grid container item xs={12} >
       <ThemeProvider theme={theme}>
         <Grid item xs={10} className='page-title'>
-          <Typography variant="pageTitle" component="h4" >My Dashboard</Typography>
+          <Typography variant="h5" color={'#4935E3'} fontWeight={700}>My Dashboard</Typography>
         </Grid>
         <Grid item xs={2} >
           <button style={{

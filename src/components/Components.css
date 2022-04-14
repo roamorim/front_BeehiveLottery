@@ -8,7 +8,9 @@
   font-size: 14px;
 }
 
-
+.test{
+  border: solid 1px red;
+}
 
 .content-address {
   font-family: 'Inter', sans-serif;
@@ -17,8 +19,7 @@
   font-size: 10px;
   line-height: 7px;
   text-align: left;
-  text-overflow: ellipsis;
-  overflow: hidden;
+
   color: #8291A9;
   padding-top: 10px;
 }
@@ -103,4 +104,14 @@
   display: inline-block;
   line-height: 52px;
   color: #FFFFFF
+}
+
+.new-icon {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: solid 1px #5956E9;
+  display: inline-block;
+  line-height: 52px;
+  color: #5956E9
 }
